@@ -8,12 +8,12 @@ Stack Used
 - NodeJs
 - DynamoDB
 
-Note : All API's are Auth Protected
+Note : All API's are Auth Protected  <br/>
 
 API's Details
 ------------
-URL : https://manch-app.herokuapp.com/create/user
-Method : POST
+URL : https://manch-app.herokuapp.com/create/user  <br/>
+Method : POST  <br/>
 payload : 
 ```
 {
@@ -24,12 +24,12 @@ payload :
 	
 }
 ```
-Functionality : It Register/Create Users into the APP , Contains all Fields Validation.
+Functionality : It Register/Create Users into the APP , Contains all Fields Validation.  <br/>
 
 ----
 ----
-URL : https://manch-app.herokuapp.com/login
-Method : POST
+URL : https://manch-app.herokuapp.com/login   <br/>
+Method : POST   <br/>
 payload:
 ```
 {
@@ -37,8 +37,8 @@ payload:
 	"password":"12345600"
 }
 ```
-Functionality : It Login Users into the APP , Contains all Fields Validation.
-In Response ==> JWT Token
+Functionality : It Login Users into the APP , Contains all Fields Validation.   <br/>
+In Response ==> JWT Token   <br/>
 ```
 {
     "status": "true",
@@ -50,8 +50,8 @@ wuY29tIiwiaWF0IjoxNTU2NDg1NjU2fQ.5BZNEuGfQiHBbfYRlbdJCv4mco96aDibP4Ma-jw_FSY"
 
 ----
 ----
-URL : https://manch-app.herokuapp.com/create/post
-Method : POST
+URL : https://manch-app.herokuapp.com/create/post    <br/>
+Method : POST    <br/>
 payload:
 ```
 {
@@ -59,54 +59,54 @@ payload:
 }
 ```
 **Header :** 
-apiKey : JWT_TOKEN_OF_LOGEDIN_USER
-Functionality : Logged In user can Create Post
+apiKey : JWT_TOKEN_OF_LOGEDIN_USER    <br/>
+Functionality : Logged In user can Create Post     <br/>
 
 ------
 ------
-URL : https://manch-app.herokuapp.com/follow/user/:email
-example: https://manch-app.herokuapp.com/follow/user/yogendra.saxena@incred.com
-Method : GET
+URL : https://manch-app.herokuapp.com/follow/user/:email    <br/>
+example: https://manch-app.herokuapp.com/follow/user/yogendra.saxena@incred.com    <br/>
+Method : GET   <br/>
 **Header :** 
-apiKey : JWT_TOKEN_OF_LOGEDIN_USER
-Functionality : Logged In user can follow some other User
+apiKey : JWT_TOKEN_OF_LOGEDIN_USER    <br/>
+Functionality : Logged In user can follow some other User    <br/>
 
 ------
 ------
 
-URL : https://manch-app.herokuapp.com/fetch/post
-Method : GET
+URL : https://manch-app.herokuapp.com/fetch/post  <br/>
+Method : GET  <br/>
 **Header :** 
-apiKey : JWT_TOKEN_OF_LOGEDIN_USER
-Functionality : Get All Posts of the Logged In User
+apiKey : JWT_TOKEN_OF_LOGEDIN_USER  <br/>
+Functionality : Get All Posts of the Logged In User  <br/>
 
 ------
 ------
 
-URL : https://manch-app.herokuapp.com/fetch/user
-Method : GET
+URL : https://manch-app.herokuapp.com/fetch/user   <br/>
+Method : GET  <br/>
 **Header :** 
-apiKey : JWT_TOKEN_OF_LOGEDIN_USER
-Functionality : Get All details of the Logged In User
+apiKey : JWT_TOKEN_OF_LOGEDIN_USER   <br/>
+Functionality : Get All details of the Logged In User   <br/>
 
 -------
 ------
 
-URL : https://manch-app.herokuapp.com/check/following/:postId
-example : https://manch-app.herokuapp.com/check/following/e8cde1da-ca11-46f7-a357-894058c69fa5
-Method : GET
+URL : https://manch-app.herokuapp.com/check/following/:postId   <br/>
+example : https://manch-app.herokuapp.com/check/following/e8cde1da-ca11-46f7-a357-894058c69fa5  <br/>
+Method : GET   <br/>
 **Header :** 
-apiKey : JWT_TOKEN_OF_LOGEDIN_USER
-Functionality : Checks if the Logged In user Follows the Author of the Passed PostId
+apiKey : JWT_TOKEN_OF_LOGEDIN_USER    <br>
+Functionality : Checks if the Logged In user Follows the Author of the Passed PostId   <br/>
 
 -------
 -------
 
-URL : https://manch-app.herokuapp.com/logout
-Method : DELETE
+URL : https://manch-app.herokuapp.com/logout <br/>
+Method : DELETE <br/>
 **Header :** 
-apiKey : JWT_TOKEN_OF_LOGEDIN_USER
-Functionality : Log Out the User 
+apiKey : JWT_TOKEN_OF_LOGEDIN_USER  <br>
+Functionality : Log Out the User <br/>
 
 Author
 ------
