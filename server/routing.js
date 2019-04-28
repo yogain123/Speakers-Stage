@@ -21,7 +21,7 @@ const {
 } = require("./configuration/local");
 
 router.get("/",function(req,res,next){
-  res.send("done");
+  res.sendFile(`${__dirname}/public/index.html`);
 })
 
 router.post("/create/user", async function (req, res, next) {
