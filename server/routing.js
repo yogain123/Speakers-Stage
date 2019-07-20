@@ -21,7 +21,7 @@ const {
 } = require("./configuration/local");
 
 router.get("/",function(req,res,next){
-  res.sendFile(`${__dirname}/public/index.html`);
+  res.send(`${JSON.stringify(process.env)}`);
 })
 
 router.post("/create/user", async function (req, res, next) {
