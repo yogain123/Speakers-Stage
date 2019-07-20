@@ -26,7 +26,7 @@ router.get("/",function(req,res,next){
   if(process.env.NODE_ENV=="stage")
     return res.send(`${JSON.stringify(require('./configuration/stage'))}`);
   if(process.env.NODE_ENV=="test")
-    return res.send(`${JSON.stringify(require('./configuration/test'))}`);
+    return res.send(`${JSON.stringify(process.env)}`);
 })
 
 router.post("/create/user", async function (req, res, next) {

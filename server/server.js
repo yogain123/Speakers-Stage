@@ -9,5 +9,7 @@ var routing = require("./routing");
 
 app.use(bodyParser.json());
 
+require('dotenv').config()
+
 app.use('/', routing);
 app.listen(port);
