@@ -21,7 +21,10 @@ const {
 } = require("./configuration/local");
 
 router.get("/",function(req,res,next){
-  res.send(`${JSON.stringify(process.env)}`);
+  if(process.env.NODE_ENV=="prod")
+    return res.send(`${JSON.stringify(require('./configuration/prod'))}`);
+  if(process.env.NODE_ENV=="stage")
+    return res.send(`${JSON.stringify(require('./configuration/stage'))}`);
 })
 
 router.post("/create/user", async function (req, res, next) {
