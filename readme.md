@@ -1,6 +1,6 @@
 Project
 --
-Manch App
+Speakers-Stage
 
 Stack Used
 ---
@@ -12,7 +12,7 @@ Note : All API's are Auth Protected  <br/>
 
 API's Details
 ------------
-URL : https://manch-app.herokuapp.com/create/user  <br/>
+URL : localhost:3003/create/user  <br/>
 Method : POST  <br/>
 payload : 
 ```
@@ -28,7 +28,7 @@ Functionality : It Register/Create Users into the APP , Contains all Fields Vali
 
 ----
 ----
-URL : https://manch-app.herokuapp.com/login   <br/>
+URL : localhost:3003/login   <br/>
 Method : POST   <br/>
 payload:
 ```
@@ -50,7 +50,7 @@ wuY29tIiwiaWF0IjoxNTU2NDg1NjU2fQ.5BZNEuGfQiHBbfYRlbdJCv4mco96aDibP4Ma-jw_FSY"
 
 ----
 ----
-URL : https://manch-app.herokuapp.com/create/post    <br/>
+URL : localhost:3003/create/post    <br/>
 Method : POST    <br/>
 payload:
 ```
@@ -64,8 +64,8 @@ Functionality : Logged In user can Create Post     <br/>
 
 ------
 ------
-URL : https://manch-app.herokuapp.com/follow/user/:email    <br/>
-example: https://manch-app.herokuapp.com/follow/user/yogendra.saxena@incred.com    <br/>
+URL : localhost:3003/follow/user/:email    <br/>
+example: localhost:3003/follow/user/yogendra.saxena@incred.com    <br/>
 Method : GET   <br/>
 **Header :** 
 apiKey : JWT_TOKEN_OF_LOGEDIN_USER    <br/>
@@ -74,7 +74,7 @@ Functionality : Logged In user can follow some other User    <br/>
 ------
 ------
 
-URL : https://manch-app.herokuapp.com/fetch/post  <br/>
+URL : localhost:3003/fetch/post  <br/>
 Method : GET  <br/>
 **Header :** 
 apiKey : JWT_TOKEN_OF_LOGEDIN_USER  <br/>
@@ -83,7 +83,7 @@ Functionality : Get All Posts of the Logged In User  <br/>
 ------
 ------
 
-URL : https://manch-app.herokuapp.com/fetch/user   <br/>
+URL : localhost:3003/fetch/user   <br/>
 Method : GET  <br/>
 **Header :** 
 apiKey : JWT_TOKEN_OF_LOGEDIN_USER   <br/>
@@ -92,8 +92,8 @@ Functionality : Get All details of the Logged In User   <br/>
 -------
 ------
 
-URL : https://manch-app.herokuapp.com/check/following/:postId   <br/>
-example : https://manch-app.herokuapp.com/check/following/e8cde1da-ca11-46f7-a357-894058c69fa5  <br/>
+URL : localhost:3003/check/following/:postId   <br/>
+example : localhost:3003/check/following/e8cde1da-ca11-46f7-a357-894058c69fa5  <br/>
 Method : GET   <br/>
 **Header :** 
 apiKey : JWT_TOKEN_OF_LOGEDIN_USER    <br>
@@ -102,7 +102,7 @@ Functionality : Checks if the Logged In user Follows the Author of the Passed Po
 -------
 -------
 
-URL : https://manch-app.herokuapp.com/logout <br/>
+URL : localhost:3003/logout <br/>
 Method : DELETE <br/>
 **Header :** 
 apiKey : JWT_TOKEN_OF_LOGEDIN_USER  <br>
